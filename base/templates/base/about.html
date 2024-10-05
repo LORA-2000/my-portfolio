@@ -1,0 +1,145 @@
+<!-- base/templates/base/about.html -->
+
+{% extends 'base/base.html' %}
+
+{% block title %}About Me - My Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center jumbotron">About Me</h1>
+<p class="text-center">I am a web developer with a passion for creating beautiful and functional websites. My goal is to build seamless user experiences through effective design and development.</p>
+
+<!-- Education Section -->
+<h2 class="mt-5 mb-4 text-center">Education</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="shadow-lg rounded mb-5">
+                <div class="card-body bg-light">
+                    <div class="timeline">
+                        <!-- First item -->
+                        <div class="timeline-item">
+                            <h4 class="font-weight-bold">Master of Computer Applications🎓</h4>
+                            <p class="mb-0"><strong>SOA University</strong> - CGPA: 8.26</p>
+                            <small class="text-muted">Year of Passing: 2023</small>
+                        </div>
+                        <hr>
+                        <!-- Second item -->
+                        <div class="timeline-item">
+                            <h4 class="font-weight-bold">Bachelor of Science🎓</h4>
+                            <p class="mb-0"><strong>Utkal University</strong> - 77.88%</p>
+                            <small class="text-muted">Year of Passing: 2021</small>
+                        </div>
+                        <hr>
+                        <!-- Third item -->
+                        <div class="timeline-item">
+                            <h4 class="font-weight-bold">12th🎓</h4>
+                            <p class="mb-0"><strong>CHSE</strong> - 64.83%</p>
+                            <small class="text-muted">Year of Passing: 2018</small>
+                        </div>
+                        <hr>
+                        <!-- Fourth item -->
+                        <div class="timeline-item">
+                            <h4 class="font-weight-bold">10th🎓</h4>
+                            <p class="mb-0"><strong>BSC</strong> - 87.33%</p>
+                            <small class="text-muted">Year of Passing: 2016</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<h2 class="mt-4">Skills</h2>
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-center">
+            <i class="fab fa-python fa-2x"></i>
+            <span class="ml-2">Python</span>
+            <span class="ml-auto">85%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-center">
+            <i class="fab fa-js fa-2x"></i>
+            <span class="ml-2">Django</span>
+            <span class="ml-auto">80%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-center">
+            <i class="fab fa-js fa-2x"></i>
+            <span class="ml-2">HTML/CSS/JavaScript</span>
+            <span class="ml-auto">90%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-center">
+            <i class="fab fa-react fa-2x"></i>
+            <span class="ml-2">React.js</span>
+            <span class="ml-auto">85%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-database fa-2x"></i>
+            <span class="ml-2">MySQL</span>
+            <span class="ml-auto">70%</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <!-- Experience Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="shadow-lg mb-4">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-laptop-code"></i> Frontend Development Intern at Digital Deta</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">April 2024 – July 2024</h6>
+                    <p class="card-text">During my internship, I contributed to various projects and enhanced my skills in frontend development:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle"></i> Developed the frontend of an e-commerce website RIDA using HTML, Tailwind CSS, JavaScript, and React JS.</li>
+                        <li><i class="fas fa-check-circle"></i> Created responsive UIs with Tailwind CSS, improving design consistency.</li>
+                        <li><i class="fas fa-check-circle"></i> Built dynamic interfaces with React JS, increasing user engagement by 20%.</li>
+                        <li><i class="fas fa-check-circle"></i> Integrated RESTful APIs with the backend team for seamless data flow.</li>
+                        <li><i class="fas fa-check-circle"></i> Participated in code reviews and agile development processes.</li>
+                        <li><i class="fas fa-check-circle"></i> Led the development of the frontend for a tutorial center website, implementing a user-friendly interface.</li>
+                        <li><i class="fas fa-check-circle"></i> Designed and optimized responsive layouts for seamless navigation across devices.</li>
+                        <li><i class="fas fa-check-circle"></i> Developed a Python-based chatbot for improved user interaction and support.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

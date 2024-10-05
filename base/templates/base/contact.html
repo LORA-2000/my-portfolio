@@ -1,0 +1,59 @@
+<!-- base/templates/base/contact.html -->
+
+{% extends 'base/base.html' %}
+
+{% block title %}Contact - My Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center jumbotron">Contact Me</h1>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Contact Details Column -->
+        <div class="col-md-6">
+            <h2 class="text-center">Contact Details</h2>
+            <div class="text-center card bg-light py-3 mt-4 rounded shadow">
+                <p>Email: <a href="mailto:bastialora258@gmail.com">bastialora258@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/r-s-lora20343a245/" target="_blank">https://www.linkedin.com/in/r-s-lora20343a245/</a></p>
+                <p>Mobile: 8018976778</p>
+            </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="col-md-6">
+            <h2 class="text-center">Get in Touch</h2>
+            <form method="POST" class="bg-light p-4 mt-4 rounded shadow">
+                {% csrf_token %}
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </div>
+            </form>
+            <!-- Success/Fail Messages -->
+            {% if messages %}
+            <div class="alert alert-success mt-3" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
