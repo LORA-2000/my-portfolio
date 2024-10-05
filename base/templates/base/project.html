@@ -1,0 +1,42 @@
+<!-- base/templates/base/project.html -->
+
+{% extends 'base/base.html' %}
+{% load static %} 
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center jumbotron">My Projects</h1>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{% static 'images/shopping.jpg' %}" class="card-img-top" alt="E-Commerce Shopping App Image">
+            <div class="card-body">
+                <h5 class="card-title">E-Commerce Shopping App</h5>
+                <p class="card-text">A full stack project using Django</p>
+                <a href="{% url 'ecommerce_detail' %}" class="btn btn-primary">View Details</a>  <!-- Update the URL name accordingly -->
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{% static 'images/juice.jpg' %}" class="card-img-top" alt="Juice Website Image">
+            <div class="card-body">
+                <h5 class="card-title">Juice Website</h5>
+                <p class="card-text">Frontend Project using React JS and Material UI</p>
+                <a href="{% url 'juice_detail' %}" class="btn btn-primary">View Details</a>  <!-- Update the URL name accordingly -->
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{% static 'images/portfolio.jpg' %}" class="card-img-top" alt="My Portfolio Project Image">
+            <div class="card-body">
+                <h5 class="card-title">My Portfolio Project</h5>
+                <p class="card-text">Personal Portfolio Project using Django</p>
+                <a href="{% url 'portfolio_detail' %}" class="btn btn-primary">View Details</a>  <!-- Update the URL name accordingly -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

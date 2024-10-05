@@ -1,0 +1,83 @@
+/* static/css/style.css */
+
+body {
+     font-family: Arial, sans-serif;
+ }
+ 
+ .jumbotron {
+     background-color: #aa00ff;
+     color: white;
+ }
+ 
+ .card {
+     transition: transform 0.2s;
+ }
+ 
+ .card:hover {
+     transform: scale(1.05);
+ }
+ /* Target all button elements */
+button,
+.btn {
+    background-color: orange; /* Background color */
+    border-color: orange; /* Border color */
+    color: white; /* Text color */
+}
+
+/* Change border color on hover */
+button:hover,
+.btn:hover {
+    background-color: darkorange; /* Darker shade on hover */
+    border-color: darkorange; /* Darker border on hover */
+}
+
+/* Optional: Focus styles for accessibility */
+button:focus,
+.btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.5); /* Add an orange shadow */
+}
+.btn-primary {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    border-color: #0056b3;
+}
+.social-icons a {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #007bff; /* Change to your desired hover color */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Add shadow on hover */
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 

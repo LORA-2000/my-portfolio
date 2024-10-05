@@ -1,0 +1,11 @@
+<!-- base/templates/base/ecommerce_detail.html -->
+
+{% extends 'base/base.html' %}
+
+{% block title %}E-Commerce Shopping App - Details{% endblock %}
+
+{% block content %}
+<h1 class="text-center">{{ project_name }}</h1>
+<p>{{ description }}</p>
+<a href="{% url 'project' %}" class="btn btn-secondary">Back to Projects</a>
+{% endblock %}

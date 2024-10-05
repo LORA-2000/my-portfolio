@@ -1,0 +1,28 @@
+<!-- base/templates/base/home.html -->
+
+{% extends 'base/base.html' %}
+{% load static %} <!-- Load staticfiles library -->
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center mb-4 row">
+    <div class="col-md-8 pt-4">
+        <h4 class="display-7 font-weight-bold " style="color: orange;">Welcome to My Portfolio</h4>
+        <h1 class="display-9 font-weight-bold p-4" style="font-size: 3.5rem;">I'm R S LORA</h1>
+        <p class="lead">Try to seek knowledge and experience in the IT industry and put efforts for the growth of the organization
+            and have a great working environment.
+        </p>
+        <div class="p-4">
+            <a class="btn btn-lg btn-primary" href="{% url 'project' %}" role="button">View Projects</a>
+            <a class="btn btn-lg btn-outline-primary" href="{% static 'documents/resume.pdf' %}" download="R_S_Lora_Resume.pdf">Download My Resume⬇️</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <img src="{% static 'images/blk_n_wht_passpic.jpg' %}" alt="Lora Photo" class="img-fluid rounded">
+    </div>
+</div>
+
+</div>
+
+{% endblock %}
